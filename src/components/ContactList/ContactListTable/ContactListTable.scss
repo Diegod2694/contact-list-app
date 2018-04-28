@@ -1,0 +1,176 @@
+.ContactListTable{
+  margin: 40px;
+  border-radius: 5px;
+  box-shadow: 0 13px 26px 0 rgba(0, 0, 0, 0.25);
+  background-color: #95fad8;
+  border: 3px solid #fdd24d;
+  width: 100%;
+  height: 80vh;
+}
+
+.TableHeader{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px;
+  padding: 20px 25px;
+}
+
+.title-container{
+  width: 60%;
+  h3{
+    margin:0;
+    font-family:  impact;
+    color: #f14742;
+    font-size: 25px;
+  }
+}
+
+.items-container{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 40%;
+  height: 100%;
+}
+
+.input-container{
+  padding-right: 5px;
+  input{
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.add-contact-button {
+  width: 39px;
+  height: 39px;
+  color: #f14742;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none !important;
+  cursor: pointer;
+  background-color: #fdd24d;
+  border: none;
+  border-radius: 72px;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.1);
+  font-family: impact;
+  font-size: 25px;
+}
+
+.divisor{
+  width: 100%;
+  border-bottom: 3px solid #fdd24d;
+}
+
+.ContactList-container{
+  padding: 20px 25px;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: relative;
+  /* Track */
+    ::-webkit-scrollbar-track {
+      background: #f14742;
+      border: 3px solid transparent;
+      background-clip: content-box;
+    }
+  /* Handle */
+    ::-webkit-scrollbar-thumb {
+      border: 1px;
+      background-color: #f14742;
+      border-radius: 2px;
+    }
+  ::-webkit-scrollbar {
+      width: 7px;
+  }
+}
+
+.ContactTable{
+  width: 100%;
+  padding: 0 15px;
+  border-collapse: collapse;
+  thead{
+    tr{
+      th{
+          text-align: left;
+          padding: 10px 10px;
+          font-size: 20px;
+          font-family: impact;
+          font-weight: bold;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: normal;
+          letter-spacing: 0.9px;
+          color: #f14742;
+        span{
+          padding-left: 93.19px;
+        }
+      }
+    }
+  }
+}
+
+.Modal{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(11, 11, 29, 0.85);
+  z-index: 1000;
+}
+
+.modal-container{
+  width: 325px;
+  height: 358.8px;
+  border-radius: 5px;
+  background-color: #95fad8; 
+  box-shadow: 0 9px 18px 0 rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  form{
+    table{
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
+.close-button{
+  position: relative;
+  top: -23px;
+  background: transparent;
+  border: none;
+  text-align:left;
+  width: 25px;
+  cursor:pointer;
+  outline:none !important;
+  width: 39px;
+  height: 39px;
+  color: #f14742;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none !important;
+  cursor: pointer;
+  background-color: #fdd24d;
+  border: none;
+  border-radius: 72px;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.1);
+  font-family: impact;
+  font-size: 25px;
+}
+.image-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
